@@ -7,13 +7,14 @@ public class Main {
         //float altura;        
 
         //Objeto
-        Pessoa objetoPessoa = new Pessoa();
+        Pessoa objetoPessoa = new Pessoa(70.0f, 1.76f);
         Scanner leitor = new Scanner(System.in);
 
         System.out.println("Digite seu peso: ");
-        objetoPessoa.peso = leitor.nextFloat();
+        objetoPessoa.setPeso(leitor.nextFloat());
         System.out.println("Digite sua altura: ");
-        objetoPessoa.altura = leitor.nextFloat();
+        objetoPessoa.setAltura(leitor.nextFloat());
+
 
         //imc = peso / (altura * altura); modo estrututal para modo POO
         System.out.println("IMC = "+ objetoPessoa.calcularIMC());
